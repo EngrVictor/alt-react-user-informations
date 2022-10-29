@@ -14,7 +14,7 @@ const Users = ({ users, loading }) => {
   return (
     <div className="container">
       {users.map((user) => (
-        <div className="user-card" key={user.id.value}>
+        <div className="user-card" key={user.id.name}>
           <img src={user.picture.large} className="image" />
           <div className="text-cont">
             <h2>
